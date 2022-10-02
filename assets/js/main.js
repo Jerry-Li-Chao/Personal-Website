@@ -75,6 +75,19 @@ sr.reveal('.contact__text', {interval: 200})
 sr.reveal('.contact__input', {delay: 400})
 sr.reveal('.contact__button', {delay: 600})
 
-
+// SEND EMAIL
+// function sendEmail(){
+//     Email.send({
+//         Host : "smtp.gmail.com",
+//         Username : "jerryli0037@gmail.com",
+//         Password : "3988jerry146111",
+//         To : 'jerryli0037@gmail.com',
+//         From : document.getElementById("email").value,
+//         Subject : "This is the subject",
+//         Body : "And this is the body"
+//     }).then(
+//       message => alert(message)
+//     );
+// }
 
 

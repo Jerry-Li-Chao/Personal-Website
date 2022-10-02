@@ -198,8 +198,8 @@
                         <span class="contact__text">505A 3770 S Figueroa St<br>Los Angeles, CA, 90007</span>
                     </div>
 
-                    <form action="https://formsubmit.co/jerryli0037@gmail.com/" method="POST" class="contact__form">
-                        <!-- <input type="hidden" name="_next" value="https://jerry-li-chao.github.io/Personal-Website/pages/thankyou.html"> -->
+                    <!-- <form  class="contact__form">
+                        <input type="hidden" name="_next" value="https://jerry-li-chao.github.io/Personal-Website/pages/thankyou.html">
                         <div class="contact__inputs">
                             <input type="text" name="name" placeholder="Your Name" class="contact__input" required>
                             <input type="email" name="email" placeholder="Your Email" class="contact__input" required>
@@ -207,7 +207,14 @@
                         <textarea name="email_content" id="" cols="0" rows="10" class="contact__input"></textarea>
 
                         <button type="submit" class="contact__button">Send</button>
-                    </form>
+                    </form> -->
+                    <form action="https://formsubmit.co/jerryli0037@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New email from personal website!">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="message" placeholder="write your message here" required>
+                        <button type="submit">Send</button>
+                   </form>
+
                 </div>
             </section>
         </main>
@@ -247,5 +254,6 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
     </body>
 </html>
