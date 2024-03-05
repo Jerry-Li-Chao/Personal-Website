@@ -387,6 +387,41 @@ img{
     color: var(--first-color);
 }
 
+
+form {
+    max-width: 600px; /* Adjusts the form width */
+    margin: 0 auto; /* Centers the form on the page */
+    padding: 20px; /* Adds some padding inside the form */
+    background-color: #f4f4f4; /* Light grey background */
+    border-radius: 8px; /* Rounded corners for the form */
+}
+
+input[type=email], input[type=text] {
+    width: 100%; /* Makes input fields take up 100% of the form's width */
+    padding: 10px; /* Adds some padding inside the input fields */
+    height: 50px;
+    margin: 10px 0; /* Adds margin between the input fields */
+    border: 1px solid #ddd; /* Adds a light border */
+    border-radius: 4px; /* Rounded corners for the input fields */
+    font-size: 16px;
+}
+
+button[type=submit] {
+    width: 100%; /* Makes the button take up 100% of the form's width */
+    padding: 10px; /* Adds some padding inside the button */
+    margin: 10px 0; /* Adds margin between the button and the input fields above */
+    background-color: #007bff; /* Sets a blue background color for the button */
+    color: white; /* Text color for the button */
+    border: none; /* Removes the border */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Changes the mouse cursor to a pointer when hovering over the button */
+}
+
+button[type=submit]:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+
 /* ===== MEDIA QUERIES =====*/
 @media screen and (min-width: 768px){
     body{
@@ -464,9 +499,6 @@ img{
     .contact__container{
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
-    }
-    .contact__form{
-        width: 380px;
     }
 
     .footer__container{
